@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  max-width: 180px;
+}
+
+.navbar {
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #e74c3c !important;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e74c3c !important;
+}
+
+.btn-signup {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.btn-signup:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.hero-content {
+  color: white;
+  max-width: 600px;
+  margin-left: 80px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.hero-cta {
+  margin-bottom: 30px;
+}
+
+.btn-primary-custom {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.btn-outline-custom {
+  background-color: white;
+  border: 2px solid white;
+  color: #e74c3c;
+  background: transparent;
+  padding: 10px 28px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-outline-custom:hover {
+  background-color: white;
+  color: red;
+}
+
+/* Feature Icons */
+.feature-icons {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.feature-icon i {
+  color: #27ae60;
+  font-size: 16px;
+}
+
+/* Stats Box */
+.stats-box {
+  background: grey;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin: 20px 0;
+  display: inline-block;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+/* Reviews Section */
+.review-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 150px;
+}
+
+.review-item:first-child .review-logo-img {
+  height: 60px;
+  max-width: 180px;
+}
+
+.review-logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+.review-rating {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 16px;
+}
+
+/* Reviews Text with Small Stars */
+.review-text-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.review-text {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.small-stars {
+  color: #ffc107;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.grey-star {
+  color: #ccc !important;
+}
+
+/* Bad Credit Section */
+.bad-credit-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.house-image-container {
+  padding: 20px;
+}
+
+.house-image {
+  width: 100%;
+  height: 440px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.content-area {
+  padding: 20px 40px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.red-text {
+  color: #e74c3c;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.specialization-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.specialization-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.specialization-list li {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.specialization-list li::before {
+  content: "•";
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.btn-cta {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* General adjustments */
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Navigation */
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    margin-top: 15px;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .btn-signup {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  /* Hero Section */
+  .hero-content {
+    margin-left: 0;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary-custom,
+  .btn-outline-custom {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .feature-icons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Stats Box */
+  .stats-box {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  /* Review Section */
+  .review-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .review-logo-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .review-rating {
+    font-size: 1.2rem;
+  }
+
+  /* Bad Credit Section */
+  .bad-credit-section {
+    padding: 40px 0;
+  }
+
+  .house-image-container {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .house-image {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .content-area {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .specialization-list li {
+    text-align: left;
+  }
+
+  .btn-cta {
+    width: 100%;
+  }
+
+  /* Navigation collapse */
+  .navbar-collapse {
+    background: white;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 0.25rem;
+  }
+
+  /* Review text adjustments */
+  .review-text-container {
+    margin-top: 3px;
+  }
+
+  .review-text {
+    font-size: 12px;
+  }
+
+  /* Bad credit section reordering */
+  .bad-credit-section .row {
+    flex-direction: column-reverse;
+  }
+}
